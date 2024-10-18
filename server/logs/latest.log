@@ -1,0 +1,1414 @@
+[14:49:30] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[14:49:30] [Server thread/INFO]: Loading properties
+[14:49:30] [Server thread/INFO]: Default game type: SURVIVAL
+[14:49:30] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[14:49:31] [Server thread/INFO]: Debug logging is disabled
+[14:49:31] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[14:49:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[14:49:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:49:31] [Server thread/INFO]: Data value allowed items: 
+[14:49:31] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[14:49:31] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+
+[14:49:31] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[14:49:31] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+[14:49:31] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+[14:49:31] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[14:49:31] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[14:49:31] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:181)
+
+[14:49:31] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563)
+
+[14:49:31] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[14:49:31] [Server thread/INFO]: Generating keypair
+[14:49:31] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[14:49:31] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[14:49:31] [Server thread/INFO]: Using default channel type
+[14:49:31] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[14:49:32] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[14:49:32] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.141
+[14:49:33] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[14:49:33] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[14:49:33] [Server thread/INFO]: [AFK] Loading AFK v4.5.5
+[14:49:33] [Server thread/INFO]: [SinglePlayerSleep] Loading SinglePlayerSleep v2.13.15
+[14:49:33] [Server thread/INFO]: [ServerMinimap] Loading ServerMinimap v0.7.8
+[14:49:33] [Server thread/INFO]: [Tablist] Loading Tablist v1.3.2.9
+[14:49:33] [Server thread/INFO]: [HideStream] Loading HideStream v3.7
+[14:49:33] [Server thread/INFO]: [SilkSpawners_v2] Loading SilkSpawners_v2 v2.3.1
+[14:49:33] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[14:49:33] [Server thread/INFO]: [DriveBackupV2] Loading DriveBackupV2 v1.8.0
+[14:49:33] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.141
+[14:49:34] [Server thread/ERROR]: Error occurred while enabling LuckPerms v5.4.141 (Is it up to date?)
+java.lang.NoClassDefFoundError: me/lucko/luckperms/lib/adventure/text/EntityNBTComponent$Builder
+	at me.lucko.luckperms.common.locale.Message.<clinit>(Message.java:100) ~[?:?]
+	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.enable(AbstractLuckPermsPlugin.java:140) ~[?:?]
+	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onEnable(LPBukkitBootstrap.java:175) ~[?:?]
+	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onEnable(BukkitLoaderPlugin.java:50) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:203) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.ClassNotFoundException: me.lucko.luckperms.lib.adventure.text.EntityNBTComponent$Builder
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:429) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 12 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:935) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:946) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:463) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:175) ~[?:?]
+	at jdk.internal.loader.Resource.getBytes(Resource.java:126) ~[?:?]
+	at jdk.internal.loader.URLClassPath$JarLoader$2.getBytes(URLClassPath.java:862) ~[?:?]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:519) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 12 more
+[14:49:34] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.141
+[14:49:34] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[14:49:34] [Server thread/ERROR]: Error occurred while disabling LuckPerms v5.4.141 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "me.lucko.luckperms.common.webeditor.store.WebEditorStore.sockets()" because "this.webEditorStore" is null
+	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.disable(AbstractLuckPermsPlugin.java:273) ~[?:?]
+	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onDisable(LPBukkitBootstrap.java:191) ~[?:?]
+	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onDisable(BukkitLoaderPlugin.java:55) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:323) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:360) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:336) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:203) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[14:49:34] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:49:34] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:49:34] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[14:49:34] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[14:49:34] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:49:34] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[14:49:34] [Server thread/INFO]: Preparing level "world"
+[14:49:34] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:49:34] [Server thread/INFO]: Mob Spawn Range: 4
+[14:49:34] [Server thread/INFO]: Anti X-Ray: true
+[14:49:34] [Server thread/INFO]: 	Engine Mode: 1
+[14:49:34] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[14:49:34] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[14:49:34] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:49:34] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:49:34] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:49:34] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:49:34] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[14:49:34] [Server thread/INFO]: Random Lighting Updates: false
+[14:49:34] [Server thread/INFO]: Structure Info Saving: true
+[14:49:34] [Server thread/INFO]: Sending up to 10 chunks per packet
+[14:49:34] [Server thread/INFO]: Max Entity Collisions: 8
+[14:49:34] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[14:49:34] [Server thread/INFO]: Max TNT Explosions: 100
+[14:49:34] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:49:34] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:49:34] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:49:34] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:49:34] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:49:34] [Server thread/INFO]: View Distance: 4
+[14:49:34] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:49:34] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[14:49:34] [Server thread/INFO]: Clear tick list: false
+[14:49:34] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:49:34] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:49:34] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[14:49:34] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[14:49:34] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[14:49:34] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[14:49:34] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[14:49:34] [Server thread/INFO]: Water over lava flow speed: 5
+[14:49:34] [Server thread/INFO]: Fix TNT cannons: false
+[14:49:34] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[14:49:34] [Server thread/INFO]: Keep spawn chunk loaded: true
+[14:49:34] [Server thread/INFO]: World async lighting: false
+[14:49:34] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[14:49:34] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[14:49:35] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[14:49:35] [Server thread/INFO]: Mob Spawn Range: 4
+[14:49:35] [Server thread/INFO]: Anti X-Ray: true
+[14:49:35] [Server thread/INFO]: 	Engine Mode: 1
+[14:49:35] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[14:49:35] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[14:49:35] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:49:35] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:49:35] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:49:35] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[14:49:35] [Server thread/INFO]: Random Lighting Updates: false
+[14:49:35] [Server thread/INFO]: Structure Info Saving: true
+[14:49:35] [Server thread/INFO]: Sending up to 10 chunks per packet
+[14:49:35] [Server thread/INFO]: Max Entity Collisions: 8
+[14:49:35] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[14:49:35] [Server thread/INFO]: Max TNT Explosions: 100
+[14:49:35] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:49:35] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:49:35] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:49:35] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:49:35] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:49:35] [Server thread/INFO]: View Distance: 4
+[14:49:35] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:49:35] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[14:49:35] [Server thread/INFO]: Clear tick list: false
+[14:49:35] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:49:35] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[14:49:35] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[14:49:35] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[14:49:35] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[14:49:35] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[14:49:35] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[14:49:35] [Server thread/INFO]: Water over lava flow speed: 5
+[14:49:35] [Server thread/INFO]: Fix TNT cannons: false
+[14:49:35] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[14:49:35] [Server thread/INFO]: Keep spawn chunk loaded: true
+[14:49:35] [Server thread/INFO]: World async lighting: false
+[14:49:35] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[14:49:35] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[14:49:35] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[14:49:35] [Server thread/INFO]: Mob Spawn Range: 4
+[14:49:35] [Server thread/INFO]: Anti X-Ray: true
+[14:49:35] [Server thread/INFO]: 	Engine Mode: 1
+[14:49:35] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[14:49:35] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[14:49:35] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:49:35] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:49:35] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:49:35] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:49:35] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[14:49:35] [Server thread/INFO]: Random Lighting Updates: false
+[14:49:35] [Server thread/INFO]: Structure Info Saving: true
+[14:49:35] [Server thread/INFO]: Sending up to 10 chunks per packet
+[14:49:35] [Server thread/INFO]: Max Entity Collisions: 8
+[14:49:35] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[14:49:35] [Server thread/INFO]: Max TNT Explosions: 100
+[14:49:35] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:49:35] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:49:35] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:49:35] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:49:35] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:49:35] [Server thread/INFO]: View Distance: 4
+[14:49:35] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:49:35] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[14:49:35] [Server thread/INFO]: Clear tick list: false
+[14:49:35] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:49:36] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[14:49:36] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[14:49:36] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[14:49:36] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[14:49:36] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[14:49:36] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[14:49:36] [Server thread/INFO]: Water over lava flow speed: 5
+[14:49:36] [Server thread/INFO]: Fix TNT cannons: false
+[14:49:36] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[14:49:36] [Server thread/INFO]: Keep spawn chunk loaded: true
+[14:49:36] [Server thread/INFO]: World async lighting: false
+[14:49:36] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[14:49:36] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[14:49:36] [Server thread/INFO]: Preparing start region for level 0 (Seed: -6212110386812450160)
+[14:49:37] [Server thread/INFO]: Preparing spawn area: 8%
+[14:49:38] [Server thread/INFO]: Preparing spawn area: 21%
+[14:49:39] [Server thread/INFO]: Preparing spawn area: 55%
+[14:49:40] [Server thread/INFO]: Preparing start region for level 1 (Seed: -6212110386812450160)
+[14:49:41] [Server thread/INFO]: Preparing spawn area: 9%
+[14:49:42] [Server thread/INFO]: Preparing spawn area: 83%
+[14:49:43] [Server thread/INFO]: Preparing start region for level 2 (Seed: -6212110386812450160)
+[14:49:44] [Server thread/INFO]: Preparing spawn area: 55%
+[14:49:44] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[14:49:44] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[14:49:44] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.4[m
+
+[14:49:44] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[14:49:44] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[14:49:44] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[14:49:44] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:49:45] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[14:49:45] [Server thread/INFO]: [AFK] Enabling AFK v4.5.5
+[14:49:45] [Server thread/INFO]: [SinglePlayerSleep] Enabling SinglePlayerSleep v2.13.15
+[14:49:45] [Server thread/INFO]: [SinglePlayerSleep] plugins/SinglePlayerSleep/config.yml
+[14:49:45] [Server thread/INFO]: **************************************************************
+[14:49:45] [Server thread/INFO]: SinglePlayerSleep version 2.13.15 Has been enabled
+[14:49:45] [Server thread/INFO]: **************************************************************
+[14:49:45] [Server thread/INFO]: SinglePlayerSleep SinglePlayerSleep debug=false in plugins/SinglePlayerSleep/config.yml
+[14:49:45] [Server thread/INFO]: [ServerMinimap] Enabling ServerMinimap v0.7.8
+[14:49:45] [Server thread/INFO]: [ServerMinimap] Created Minimap with ID 0. Use /give <name> MAP 1 0 to get the map as item. (Vanilla command)
+[14:49:45] [Server thread/INFO]: [ServerMinimap] Alternative command: /minimap (Plugin command)
+[14:49:45] [Server thread/INFO]: [Tablist] Enabling Tablist v1.3.2.9
+[14:49:45] [Server thread/INFO]: Tablist> You have to install PlaceholderAPI to use some placeholders !
+
+[14:49:45] [Server thread/INFO]: Tablist> You have to install Vault to use the part of Economy
+
+[14:49:45] [Server thread/INFO]: Tablist> You have to install Vault to use the part of Chat
+
+[14:49:45] [Server thread/INFO]: Tablist> Tablist v1.3.2.9 enabled!!
+[14:49:45] [Server thread/INFO]: [HideStream] Enabling HideStream v3.7
+[14:49:45] [Server thread/INFO]: [HideStream] Version 3.7 enabled.
+[14:49:45] [Server thread/INFO]: [SilkSpawners_v2] Enabling SilkSpawners_v2 v2.3.1
+[14:49:45] [Server thread/INFO]: [SilkSpawners] Loading configuration...
+[14:49:45] [Server thread/INFO]: [SilkSpawners] Configuration is up to date
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Starting SilkSpawners v2.3.1[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loading Cross-Version support[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loaded support for version 1.8.8[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loading locale file[m
+
+[14:49:45] [Thread-8/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Checking for updates[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Starting bStats integration[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Registering listeners[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Registering commands[m
+
+[14:49:45] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Started SilkSpawners v2.3.1[m
+
+[14:49:45] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[14:49:45] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[14:49:46] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[14:49:46] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[14:49:46] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[14:49:46] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.8.0
+[14:49:47] [Thread-8/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: The plugin is up to date (Current release v2.3.1)[m
+
+[14:49:47] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mConfig loaded![m
+
+[14:49:47] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mScheduling a backup to run every 60 minutes[m
+
+[14:49:47] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mMetrics started[m
+
+[14:49:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:49:47] [Server thread/INFO]: Done (12.887s)! For help, type "help" or "?"
+[14:49:47] [Server thread/INFO]: Timings Reset
+[14:49:47] [Craft Scheduler Thread - 1/INFO]: [HideStream] Running updater ..
+[14:49:47] [Craft Scheduler Thread - 5/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mChecking for updates...[m
+
+[14:49:47] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[21m[SimpleTpa] There is a new update available.[m
+
+[14:49:47] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] There is a new update available:[m
+
+[14:49:47] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/[m
+
+[14:49:47] [Craft Scheduler Thread - 1/INFO]: [HideStream] ------------------------------------
+[14:49:47] [Craft Scheduler Thread - 1/INFO]: [HideStream] HideStream v3.10 is now available!
+[14:49:47] [Craft Scheduler Thread - 1/INFO]: [HideStream] Run '/hs update' to update now.
+[14:49:47] [Craft Scheduler Thread - 1/INFO]: [HideStream] ------------------------------------
+[14:52:39] [Thread-10/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[14:52:39] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mEnabling automatic backups[m
+
+[14:52:39] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:40894] logged in with entity id 578 at ([world]-2327.6626800501626, 63.0, -136.30413496044935)
+[14:53:48] [Server thread/INFO]: You must specify which player you wish to perform this action on.
+[14:53:55] [Server thread/INFO]: Set Domino1234's game mode to Survival Mode
+[14:54:21] [Server thread/INFO]: Domino1234 lost connection: Disconnected
+[15:05:03] [Thread-12/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[15:05:04] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:36060] logged in with entity id 798 at ([world]-2339.9040492773793, 63.0, -131.21641857990465)
+[15:05:41] [Server thread/INFO]: Changing to clear weather
+[15:08:49] [Server thread/INFO]: Domino1234 lost connection: Disconnected
+[15:22:41] [Thread-13/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[15:22:41] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:53404] logged in with entity id 1135 at ([world]-2338.011316090328, 63.0, -116.82351141355598)
+[15:23:33] [Thread-14/INFO]: UUID of player Edder_1 is 43a02876-64fe-3707-bc1a-429c44418197
+[15:23:33] [Server thread/INFO]: Edder_1[/[0:0:0:0:0:0:0:1]:48550] logged in with entity id 1302 at ([world]-2368.345921984738, 60.0, -113.53149046439188)
+[15:23:53] [Thread-15/INFO]: UUID of player lilsigala14 is 1b84bed7-9c4c-3a07-bb44-c1de574ae6a6
+[15:23:53] [Server thread/INFO]: lilsigala14[/[0:0:0:0:0:0:0:1]:53510] logged in with entity id 1389 at ([world]-2429.32483321214, 63.0, -44.32468238616414)
+[15:24:02] [Async Chat Thread - #0/INFO]: <Domino1234> SEARCH THE ISLAND FOR MATEO![m
+
+[15:24:08] [Async Chat Thread - #0/INFO]: <Edder_1> ok[m
+
+[15:24:27] [Async Chat Thread - #0/INFO]: <Domino1234> that 2.5 bil stadium cant go to waste[m
+
+[15:24:32] [Server thread/INFO]: Domino1234 issued server command: /tpahere lilsigala14
+[15:24:40] [Server thread/INFO]: lilsigala14 issued server command: /tpaccept
+[15:25:24] [Async Chat Thread - #0/INFO]: <Domino1234> SEARCH FOR HIM[m
+
+[15:25:35] [Async Chat Thread - #0/INFO]: <Domino1234> EVRY CLUE[m
+
+[15:25:44] [Async Chat Thread - #0/INFO]: <Domino1234> HE TOOK THE BECON AND IRON[m
+
+[15:27:31] [Server thread/INFO]: Given [Ender Pearl] * 16 to Domino1234
+[15:29:47] [Server thread/INFO]: [0;37;22mEdder_1 is now AFK[m
+
+[15:30:25] [Async Chat Thread - #1/INFO]: <Domino1234> mateo may be loggin on be READY[m
+
+[15:34:33] [Server thread/INFO]: CONSOLE: [0;31;1mPlease note that this command is not supported and may cause issues when using some plugins.[m
+
+[15:34:33] [Server thread/INFO]: CONSOLE: [0;31;1mIf you encounter any issues please use the /stop command to restart your server.[m
+
+[15:34:33] [Server thread/INFO]: Debug logging is disabled
+[15:34:33] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[15:34:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[15:34:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:34:33] [Server thread/INFO]: Data value allowed items: 
+[15:34:33] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[15:34:33] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+
+[15:34:33] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[15:34:33] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+[15:34:33] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+[15:34:33] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[15:34:33] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.reload(CraftServer.java:716)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.Bukkit.reload(Bukkit.java:556)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:25)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:146)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchCommand(CraftServer.java:666)
+
+[15:34:33] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchServerCommand(CraftServer.java:629)
+
+[15:34:33] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.aO(DedicatedServer.java:416)
+
+[15:34:33] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:379)
+
+[15:34:33] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+
+[15:34:33] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+
+[15:34:33] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world] --------
+[15:34:33] [Server thread/INFO]: Mob Spawn Range: 4
+[15:34:33] [Server thread/INFO]: Anti X-Ray: true
+[15:34:33] [Server thread/INFO]: 	Engine Mode: 1
+[15:34:33] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[15:34:33] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[15:34:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:34:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:34:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:34:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[15:34:33] [Server thread/INFO]: Random Lighting Updates: false
+[15:34:33] [Server thread/INFO]: Structure Info Saving: true
+[15:34:33] [Server thread/INFO]: Sending up to 10 chunks per packet
+[15:34:33] [Server thread/INFO]: Max Entity Collisions: 8
+[15:34:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[15:34:33] [Server thread/INFO]: Max TNT Explosions: 100
+[15:34:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:34:33] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:34:33] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:34:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:34:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:34:33] [Server thread/INFO]: View Distance: 4
+[15:34:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:34:33] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[15:34:33] [Server thread/INFO]: Clear tick list: false
+[15:34:33] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world] --------
+[15:34:33] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[15:34:33] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[15:34:33] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[15:34:33] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[15:34:33] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[15:34:33] [Server thread/INFO]: Water over lava flow speed: 5
+[15:34:33] [Server thread/INFO]: Fix TNT cannons: false
+[15:34:33] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[15:34:33] [Server thread/INFO]: Keep spawn chunk loaded: true
+[15:34:33] [Server thread/INFO]: World async lighting: false
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[15:34:33] [Server thread/INFO]: Mob Spawn Range: 4
+[15:34:33] [Server thread/INFO]: Anti X-Ray: true
+[15:34:33] [Server thread/INFO]: 	Engine Mode: 1
+[15:34:33] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[15:34:33] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[15:34:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:34:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:34:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:34:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[15:34:33] [Server thread/INFO]: Random Lighting Updates: false
+[15:34:33] [Server thread/INFO]: Structure Info Saving: true
+[15:34:33] [Server thread/INFO]: Sending up to 10 chunks per packet
+[15:34:33] [Server thread/INFO]: Max Entity Collisions: 8
+[15:34:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[15:34:33] [Server thread/INFO]: Max TNT Explosions: 100
+[15:34:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:34:33] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:34:33] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:34:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:34:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:34:33] [Server thread/INFO]: View Distance: 4
+[15:34:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:34:33] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[15:34:33] [Server thread/INFO]: Clear tick list: false
+[15:34:33] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[15:34:33] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[15:34:33] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[15:34:33] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[15:34:33] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[15:34:33] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[15:34:33] [Server thread/INFO]: Water over lava flow speed: 5
+[15:34:33] [Server thread/INFO]: Fix TNT cannons: false
+[15:34:33] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[15:34:33] [Server thread/INFO]: Keep spawn chunk loaded: true
+[15:34:33] [Server thread/INFO]: World async lighting: false
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[15:34:33] [Server thread/INFO]: Mob Spawn Range: 4
+[15:34:33] [Server thread/INFO]: Anti X-Ray: true
+[15:34:33] [Server thread/INFO]: 	Engine Mode: 1
+[15:34:33] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[15:34:33] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[15:34:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:34:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:34:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:34:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:34:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[15:34:33] [Server thread/INFO]: Random Lighting Updates: false
+[15:34:33] [Server thread/INFO]: Structure Info Saving: true
+[15:34:33] [Server thread/INFO]: Sending up to 10 chunks per packet
+[15:34:33] [Server thread/INFO]: Max Entity Collisions: 8
+[15:34:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[15:34:33] [Server thread/INFO]: Max TNT Explosions: 100
+[15:34:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:34:33] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:34:33] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:34:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:34:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:34:33] [Server thread/INFO]: View Distance: 4
+[15:34:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:34:33] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[15:34:33] [Server thread/INFO]: Clear tick list: false
+[15:34:33] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:34:33] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[15:34:33] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[15:34:33] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[15:34:33] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[15:34:33] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[15:34:33] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[15:34:33] [Server thread/INFO]: Water over lava flow speed: 5
+[15:34:33] [Server thread/INFO]: Fix TNT cannons: false
+[15:34:33] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[15:34:33] [Server thread/INFO]: Keep spawn chunk loaded: true
+[15:34:33] [Server thread/INFO]: World async lighting: false
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[15:34:33] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[15:34:33] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.8.0
+[15:34:33] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStopping plugin![m
+
+[15:34:33] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
+[15:34:33] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
+[15:34:33] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
+[15:34:33] [Server thread/INFO]: [SilkSpawners_v2] Disabling SilkSpawners_v2 v2.3.1
+[15:34:33] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Stopping version checker[m
+
+[15:34:33] [Server thread/INFO]: [HideStream] Disabling HideStream v3.7
+[15:34:33] [Server thread/INFO]: [HideStream] Version 3.7 disabled.
+[15:34:33] [Server thread/INFO]: [Tablist] Disabling Tablist v1.3.2.9
+[15:34:33] [Server thread/INFO]: Tablist> Tablist v1.3.2.9 disabled!!
+[15:34:33] [Server thread/INFO]: [ServerMinimap] Disabling ServerMinimap v0.7.8
+[15:34:33] [Server thread/INFO]: [SinglePlayerSleep] Disabling SinglePlayerSleep v2.13.15
+[15:34:33] [Server thread/INFO]: **************************************************************
+[15:34:33] [Server thread/INFO]: SinglePlayerSleep version 2.13.15 Has been disabled
+[15:34:33] [Server thread/INFO]: **************************************************************
+[15:34:33] [Server thread/INFO]: [AFK] Disabling AFK v4.5.5
+[15:34:33] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
+[15:34:33] [Server thread/INFO]: [SimpleHomes] Disabling SimpleHomes v2.2
+[15:34:33] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.4
+[15:34:33] [Server thread/INFO]: [0;36;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[15:34:33] [Server thread/INFO]: [0;36;1m[21m[SimpleTpa] Simple Tpa has been disabled on version 6.4[m
+
+[15:34:34] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[15:34:34] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.141
+[15:34:34] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[15:34:34] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[15:34:34] [Server thread/INFO]: [AFK] Loading AFK v4.5.5
+[15:34:34] [Server thread/INFO]: [SinglePlayerSleep] Loading SinglePlayerSleep v2.13.15
+[15:34:34] [Server thread/INFO]: [ServerMinimap] Loading ServerMinimap v0.7.8
+[15:34:34] [Server thread/INFO]: [Tablist] Loading Tablist v1.3.2.9
+[15:34:34] [Server thread/INFO]: [HideStream] Loading HideStream v3.7
+[15:34:34] [Server thread/INFO]: [SilkSpawners_v2] Loading SilkSpawners_v2 v2.3.1
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[15:34:34] [Server thread/INFO]: [DriveBackupV2] Loading DriveBackupV2 v1.8.0
+[15:34:34] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.141
+[15:34:34] [Server thread/ERROR]: Error occurred while enabling LuckPerms v5.4.141 (Is it up to date?)
+java.lang.NoClassDefFoundError: me/lucko/luckperms/lib/adventure/text/EntityNBTComponent$Builder
+	at me.lucko.luckperms.common.locale.Message.<clinit>(Message.java:100) ~[?:?]
+	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.enable(AbstractLuckPermsPlugin.java:140) ~[?:?]
+	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onEnable(LPBukkitBootstrap.java:175) ~[?:?]
+	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onEnable(BukkitLoaderPlugin.java:50) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.reload(CraftServer.java:768) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.Bukkit.reload(Bukkit.java:556) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:25) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:146) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchCommand(CraftServer.java:666) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchServerCommand(CraftServer.java:629) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.aO(DedicatedServer.java:416) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:379) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.ClassNotFoundException: me.lucko.luckperms.lib.adventure.text.EntityNBTComponent$Builder
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:429) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 20 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:935) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:946) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:463) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:175) ~[?:?]
+	at jdk.internal.loader.Resource.getBytes(Resource.java:126) ~[?:?]
+	at jdk.internal.loader.URLClassPath$JarLoader$2.getBytes(URLClassPath.java:862) ~[?:?]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:519) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 20 more
+[15:34:34] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.141
+[15:34:34] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[15:34:34] [Server thread/ERROR]: Error occurred while disabling LuckPerms v5.4.141 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "me.lucko.luckperms.common.webeditor.store.WebEditorStore.sockets()" because "this.webEditorStore" is null
+	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.disable(AbstractLuckPermsPlugin.java:273) ~[?:?]
+	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onDisable(LPBukkitBootstrap.java:191) ~[?:?]
+	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onDisable(BukkitLoaderPlugin.java:55) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:323) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:360) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:336) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.reload(CraftServer.java:768) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.Bukkit.reload(Bukkit.java:556) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:25) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:146) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchCommand(CraftServer.java:666) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchServerCommand(CraftServer.java:629) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.aO(DedicatedServer.java:416) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:379) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[15:34:34] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[15:34:34] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[15:34:34] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.4[m
+
+[15:34:34] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[15:34:34] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[15:34:34] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[15:34:34] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:34:34] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[15:34:34] [Server thread/INFO]: [AFK] Enabling AFK v4.5.5
+[15:34:34] [Server thread/INFO]: [SinglePlayerSleep] Enabling SinglePlayerSleep v2.13.15
+[15:34:34] [Server thread/INFO]: [SinglePlayerSleep] plugins/SinglePlayerSleep/config.yml
+[15:34:34] [Server thread/INFO]: **************************************************************
+[15:34:34] [Server thread/INFO]: SinglePlayerSleep version 2.13.15 Has been enabled
+[15:34:34] [Server thread/INFO]: **************************************************************
+[15:34:34] [Server thread/INFO]: SinglePlayerSleep SinglePlayerSleep debug=false in plugins/SinglePlayerSleep/config.yml
+[15:34:34] [Server thread/INFO]: [ServerMinimap] Enabling ServerMinimap v0.7.8
+[15:34:34] [Server thread/INFO]: [ServerMinimap] Created Minimap with ID 0. Use /give <name> MAP 1 0 to get the map as item. (Vanilla command)
+[15:34:34] [Server thread/INFO]: [ServerMinimap] Alternative command: /minimap (Plugin command)
+[15:34:34] [Server thread/INFO]: [Tablist] Enabling Tablist v1.3.2.9
+[15:34:34] [Server thread/INFO]: Tablist> You have to install PlaceholderAPI to use some placeholders !
+
+[15:34:34] [Server thread/INFO]: Tablist> You have to install Vault to use the part of Economy
+
+[15:34:34] [Server thread/INFO]: Tablist> You have to install Vault to use the part of Chat
+
+[15:34:34] [Server thread/INFO]: Tablist> Tablist v1.3.2.9 enabled!!
+[15:34:34] [Server thread/INFO]: [HideStream] Enabling HideStream v3.7
+[15:34:34] [Server thread/INFO]: [HideStream] Version 3.7 enabled.
+[15:34:34] [Server thread/INFO]: [SilkSpawners_v2] Enabling SilkSpawners_v2 v2.3.1
+[15:34:34] [Server thread/INFO]: [SilkSpawners] Loading configuration...
+[15:34:34] [Server thread/INFO]: [SilkSpawners] Configuration is up to date
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Starting SilkSpawners v2.3.1[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loading Cross-Version support[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loaded support for version 1.8.8[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Loading locale file[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Starting bStats integration[m
+
+[15:34:34] [Thread-20/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Checking for updates[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Registering listeners[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Registering commands[m
+
+[15:34:34] [Server thread/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: Started SilkSpawners v2.3.1[m
+
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[15:34:34] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[15:34:34] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.8.0
+[15:34:35] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mConfig loaded![m
+
+[15:34:35] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mScheduling a backup to run every 60 minutes[m
+
+[15:34:35] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mMetrics started[m
+
+[15:34:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:34:35] [Server thread/INFO]: CONSOLE: [0;32;1mReload complete.[m
+
+[15:34:35] [Server thread/INFO]: Timings Reset
+[15:34:35] [Craft Scheduler Thread - 15/INFO]: [HideStream] Running updater ..
+[15:34:35] [Craft Scheduler Thread - 19/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mChecking for updates...[m
+
+[15:34:35] [Thread-20/INFO]: [0;30;1m[[0;36;1mSilkSpawners[0;30;1m] [0;30;1m[[0;32;22mINFO[0;30;1m][0;37;22m: The plugin is up to date (Current release v2.3.1)[m
+
+[15:34:35] [Craft Scheduler Thread - 14/INFO]: [0;31;1m[21m[SimpleTpa] There is a new update available.[m
+
+[15:34:35] [Craft Scheduler Thread - 14/INFO]: [0;31;1m[SimpleTpa] There is a new update available:[m
+
+[15:34:35] [Craft Scheduler Thread - 14/INFO]: [0;31;1m[SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/[m
+
+[15:34:35] [Craft Scheduler Thread - 15/INFO]: [HideStream] ------------------------------------
+[15:34:35] [Craft Scheduler Thread - 15/INFO]: [HideStream] HideStream v3.10 is now available!
+[15:34:35] [Craft Scheduler Thread - 15/INFO]: [HideStream] Run '/hs update' to update now.
+[15:34:35] [Craft Scheduler Thread - 15/INFO]: [HideStream] ------------------------------------
+[15:34:40] [Server thread/INFO]: Domino1234 issued server command: /afk
+[15:34:40] [Server thread/INFO]: [0;37;22mDomino1234 is now AFK[m
+
+[15:34:41] [Server thread/INFO]: [0;37;22mDomino1234 is no longer AFK.[m
+
+[15:35:05] [Server thread/INFO]: Edder_1 lost connection: Login timed out!
+[15:35:05] [Server thread/WARN]: handleDisconnection() called twice
+[15:36:42] [Thread-22/INFO]: UUID of player T_ony is 2f3fde68-f7c3-39fb-8078-0d1661c5910b
+[15:36:42] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mEnabling automatic backups[m
+
+[15:36:42] [Server thread/INFO]: T_ony[/[0:0:0:0:0:0:0:1]:58916] logged in with entity id 3448 at ([world]258.5, 62.0, -41.5)
+[15:37:12] [Server thread/INFO]: T_ony lost connection: Login timed out!
+[15:37:12] [Server thread/WARN]: handleDisconnection() called twice
+[15:37:17] [Thread-23/INFO]: UUID of player T_ony is 2f3fde68-f7c3-39fb-8078-0d1661c5910b
+[15:37:17] [Server thread/INFO]: T_ony[/[0:0:0:0:0:0:0:1]:34982] logged in with entity id 3811 at ([world]258.0042389013545, 62.0, -41.5275507935202)
+[15:40:58] [Async Chat Thread - #2/INFO]: <Domino1234> anthony were doing sqauts and pushups and situps[m
+
+[15:41:05] [Async Chat Thread - #2/INFO]: <T_ony> i know[m
+
+[15:41:13] [Async Chat Thread - #2/INFO]: <T_ony> im poor[m
+
+[15:41:23] [Async Chat Thread - #2/INFO]: <T_ony> i have only wooden tools:([m
+
+[15:41:43] [Async Chat Thread - #2/INFO]: <Domino1234> i would gie you stuff cause im rich but mateo has to be annoying and rob us[m
+
+[15:42:00] [Async Chat Thread - #2/INFO]: <T_ony> can i goto your base[m
+
+[15:42:04] [Async Chat Thread - #2/INFO]: <Domino1234> we are just trying to live in peace too[m
+
+[15:42:12] [Async Chat Thread - #2/INFO]: <Domino1234> soon after i find mateo[m
+
+[15:43:21] [Async Chat Thread - #3/INFO]: <T_ony> hes not playing[m
+
+[15:43:28] [Async Chat Thread - #3/INFO]: <T_ony> can you tell me your coords[m
+
+[15:43:46] [Server thread/INFO]: Domino1234 issued server command: /tpahere T_ony
+[15:43:53] [Server thread/INFO]: T_ony issued server command: /tpaccept
+[15:44:15] [Async Chat Thread - #3/INFO]: <Domino1234> your job is to protect this base got it[m
+
+[15:44:58] [Server thread/INFO]: T_ony issued server command: /tp accept
+[15:45:01] [Async Chat Thread - #3/INFO]: <T_ony> ok[m
+
+[15:45:19] [Async Chat Thread - #3/INFO]: <T_ony> umm i not at your base[m
+
+[15:45:20] [Server thread/INFO]: T_ony issued server command: /tho
+[15:45:35] [Async Chat Thread - #3/INFO]: <Domino1234> DO NOT STEP ON GRAVEL OR STONE in the forest[m
+
+[15:45:43] [Async Chat Thread - #3/INFO]: <T_ony> im on trees[m
+
+[15:45:47] [Server thread/INFO]: Domino1234 issued server command: /tpahere T_ony
+[15:45:53] [Server thread/INFO]: T_ony issued server command: /tpaccept
+[15:46:04] [Server thread/INFO]: T_ony issued server command: /tp again
+[15:46:08] [Async Chat Thread - #3/INFO]: <Domino1234> DO NOT STEP ON STONE OR GRAVEL THEY HAVE MINES or aka tnt traps[m
+
+[15:46:08] [Async Chat Thread - #3/INFO]: <T_ony> tpagain[m
+
+[15:46:16] [Server thread/INFO]: Domino1234 issued server command: /tpahere T_ony
+[15:46:17] [Async Chat Thread - #3/INFO]: <T_ony> i got attacked by a spider[m
+
+[15:46:18] [Async Chat Thread - #3/INFO]: <Domino1234> dont move[m
+
+[15:46:21] [Server thread/INFO]: T_ony issued server command: /tpaccept
+[15:46:32] [Server thread/INFO]: T_ony has just earned the achievement [Taking Inventory]
+[15:46:33] [Thread-25/INFO]: UUID of player Edder_1 is 43a02876-64fe-3707-bc1a-429c44418197
+[15:46:33] [Server thread/INFO]: Edder_1[/[0:0:0:0:0:0:0:1]:38248] logged in with entity id 5091 at ([world]-2291.300000011921, 66.0, -112.3024855743657)
+[15:46:41] [Async Chat Thread - #3/INFO]: <Domino1234> i would give you iron gear but look[m
+
+[15:46:47] [Async Chat Thread - #3/INFO]: <Domino1234> mateo robbed me[m
+
+[15:46:53] [Async Chat Thread - #3/INFO]: <T_ony> oh[m
+
+[15:47:11] [Async Chat Thread - #3/INFO]: <Domino1234> HE BROKE OUR CHEST[m
+
+[15:48:28] [Async Chat Thread - #4/INFO]: <T_ony> where do i put my bed[m
+
+[15:48:37] [Async Chat Thread - #4/INFO]: <Domino1234> sleep right here[m
+
+[15:48:41] [Async Chat Thread - #4/INFO]: <Domino1234> for now[m
+
+[15:50:33] [Server thread/INFO]: [0;37;22mEdder_1 is now AFK[m
+
+[15:50:57] [Server thread/INFO]: lilsigala14 issued server command: /back
+[15:51:17] [Server thread/INFO]: [0;37;22mEdder_1 is no longer AFK.[m
+
+[15:51:30] [Async Chat Thread - #5/INFO]: <Domino1234> no like sleep on this already exisiting beds[m
+
+[15:51:30] [Async Chat Thread - #5/INFO]: <T_ony> i need iron:([m
+
+[15:51:49] [Server thread/INFO]: Given [Iron Ingot] * 64 to Domino1234
+[15:51:57] [Async Chat Thread - #5/INFO]: <Domino1234> Here[m
+
+[15:52:25] [Async Chat Thread - #5/INFO]: <T_ony> i love you[m
+
+[15:53:18] [Server thread/INFO]: Given [Obsidian] * 34 to Domino1234
+[15:54:05] [Server thread/INFO]: Given [Blaze Rod] * 32 to Domino1234
+[15:55:29] [Server thread/INFO]: T_ony lost connection: Disconnected
+[15:58:14] [Server thread/INFO]: Domino1234 issued server command: /tablist
+[15:58:27] [Server thread/INFO]: Domino1234 issued server command: /tpahere Domino1234
+[15:58:33] [Server thread/INFO]: Domino1234 issued server command: /tpahere lilsigala14
+[15:58:38] [Server thread/INFO]: lilsigala14 issued server command: /tpaccept
+[16:00:01] [Server thread/INFO]: lilsigala14 lost connection: Disconnected
+[16:00:05] [Server thread/INFO]: Domino1234 issued server command: /tpahere Edder_1
+[16:00:13] [Async Chat Thread - #6/INFO]: <Domino1234> Accept eddie[m
+
+[16:00:16] [Server thread/INFO]: Edder_1 issued server command: /tpaccept
+[16:00:24] [Async Chat Thread - #6/INFO]: <Domino1234> d[m
+
+[16:00:42] [Async Chat Thread - #6/INFO]: <Edder_1> that is this[m
+
+[16:00:47] [Async Chat Thread - #6/INFO]: <Domino1234> welcome to the arena i call red[m
+
+[16:01:00] [Async Chat Thread - #6/INFO]: <Domino1234> put all items in chest[m
+
+[16:01:08] [Async Chat Thread - #6/INFO]: <Domino1234> no foreight items btw[m
+
+[16:01:12] [Async Chat Thread - #6/INFO]: <Domino1234> use only iron items[m
+
+[16:01:17] [Async Chat Thread - #6/INFO]: <Domino1234> from the arena[m
+
+[16:01:22] [Async Chat Thread - #6/INFO]: <Edder_1> ok'[m
+
+[16:01:44] [Async Chat Thread - #6/INFO]: <Edder_1> and the house[m
+
+[16:02:33] [Async Chat Thread - #6/INFO]: <Domino1234> im back[m
+
+[16:04:23] [Server thread/INFO]: Domino1234 issued server command: /back
+[16:04:26] [Async Chat Thread - #7/INFO]: <Domino1234> back[m
+
+[16:04:33] [Server thread/INFO]: [0;37;22mEdder_1 is now AFK[m
+
+[16:05:52] [Server thread/INFO]: [0;37;22mEdder_1 is no longer AFK.[m
+
+[16:05:53] [Async Chat Thread - #8/INFO]: <Domino1234> EDDIE[m
+
+[16:05:57] [Async Chat Thread - #8/INFO]: <Domino1234> LETS FIGHT[m
+
+[16:06:06] [Async Chat Thread - #8/INFO]: <Domino1234> 1[m
+
+[16:06:07] [Server thread/INFO]: Domino1234 issued server command: /2
+[16:06:09] [Async Chat Thread - #8/INFO]: <Domino1234> 2[m
+
+[16:06:10] [Async Chat Thread - #8/INFO]: <Edder_1> wait[m
+
+[16:06:10] [Async Chat Thread - #8/INFO]: <Domino1234> 3[m
+
+[16:06:23] [Async Chat Thread - #8/INFO]: <Domino1234> oh[m
+
+[16:07:41] [Thread-26/INFO]: UUID of player Goof_Ball18 is 323a043b-425b-3d3e-b22b-091fb878fbae
+[16:07:41] [Server thread/INFO]: Goof_Ball18[/[0:0:0:0:0:0:0:1]:36112] logged in with entity id 9574 at ([world]-75.17466710821195, 67.0, -172.9868815893851)
+[16:07:55] [Async Chat Thread - #9/INFO]: <Goof_Ball18> whoopises, I bombed a sheep[m
+
+[16:08:06] [Server thread/INFO]: Goof_Ball18 issued server command: /home 5
+[16:08:07] [Async Chat Thread - #9/INFO]: <Edder_1> the fuck[m
+
+[16:08:09] [Server thread/INFO]: Edder_1 issued server command: /back
+[16:08:28] [Async Chat Thread - #9/INFO]: <Edder_1> where my thing go[m
+
+[16:08:45] [Async Chat Thread - #9/INFO]: <Goof_Ball18> ?[m
+
+[16:08:53] [Async Chat Thread - #9/INFO]: <Domino1234> it in your chest and here the stuff[m
+
+[16:09:09] [Async Chat Thread - #9/INFO]: <Domino1234> others are in the chest[m
+
+[16:09:13] [Async Chat Thread - #9/INFO]: <Domino1234> lets play again[m
+
+[16:09:28] [Async Chat Thread - #9/INFO]: <Domino1234> tell me when your eady[m
+
+[16:09:40] [Async Chat Thread - #9/INFO]: <Edder_1> for/[m
+
+[16:09:40] [Async Chat Thread - #10/INFO]: <Edder_1> for/[m
+
+[16:11:33] [Async Chat Thread - #11/INFO]: <Domino1234> ready?[m
+
+[16:11:40] [Async Chat Thread - #11/INFO]: <Edder_1> i have to go home[m
+
+[16:11:52] [Async Chat Thread - #11/INFO]: <Edder_1> i got iron to burn down[m
+
+[16:12:06] [Async Chat Thread - #11/INFO]: <Domino1234> put the arena armor in the stand and stuff in chest[m
+
+[16:12:10] [Async Chat Thread - #11/INFO]: <Domino1234> and take your items[m
+
+[16:12:28] [Async Chat Thread - #11/INFO]: <Edder_1> can i keep the armor/[m
+
+[16:12:33] [Server thread/INFO]: [0;37;22mGoof_Ball18 is now AFK[m
+
+[16:12:37] [Async Chat Thread - #11/INFO]: <Domino1234> no[m
+
+[16:12:45] [Async Chat Thread - #11/INFO]: <Edder_1> how come[m
+
+[16:12:45] [Async Chat Thread - #11/INFO]: <Edder_1> how come[m
+
+[16:12:51] [Async Chat Thread - #11/INFO]: <Domino1234> you know hwo hard it is to get unbreaking[m
+
+[16:12:54] [Async Chat Thread - #11/INFO]: <Domino1234> III[m
+
+[16:13:00] [Async Chat Thread - #11/INFO]: <Domino1234> for all items[m
+
+[16:13:35] [Async Chat Thread - #11/INFO]: <Edder_1> tp me to home[m
+
+[16:13:47] [Async Chat Thread - #11/INFO]: <Domino1234> it right next to our base[m
+
+[16:14:02] [Server thread/INFO]: Domino1234 issued server command: /tpahere Goof_Ball18
+[16:14:07] [Async Chat Thread - #11/INFO]: <Edder_1> i see it[m
+
+[16:14:13] [Server thread/INFO]: Goof_Ball18 issued server command: /tpaccept
+[16:14:18] [Server thread/INFO]: [0;37;22mGoof_Ball18 is no longer AFK.[m
+
+[16:14:26] [Async Chat Thread - #11/INFO]: <Domino1234> welcome to the arena[m
+
+[16:14:31] [Async Chat Thread - #11/INFO]: <Domino1234> got to the blue side[m
+
+[16:14:52] [Async Chat Thread - #11/INFO]: <Domino1234> go*[m
+
+[16:15:00] [Async Chat Thread - #11/INFO]: <Domino1234> get your items[m
+
+[16:15:07] [Async Chat Thread - #11/INFO]: <Domino1234> all foreign items in the chest[m
+
+[16:15:20] [Async Chat Thread - #11/INFO]: <Domino1234> EDDIE MY ITEMS[m
+
+[16:15:24] [Async Chat Thread - #11/INFO]: <Domino1234> YOU TOOK IT[m
+
+[16:15:46] [Async Chat Thread - #11/INFO]: <Domino1234> nevrmind[m
+
+[16:16:00] [Async Chat Thread - #11/INFO]: <Domino1234> i went to the wrong side[m
+
+[16:16:24] [Async Chat Thread - #11/INFO]: <Domino1234> only items in the arena can be used in battle btw[m
+
+[16:16:32] [Async Chat Thread - #11/INFO]: <Edder_1> ik[m
+
+[16:16:40] [Async Chat Thread - #11/INFO]: <Domino1234> so no futher damage can get caused alfred[m
+
+[16:16:48] [Async Chat Thread - #11/INFO]: <Goof_Ball18> huh[m
+
+[16:16:55] [Async Chat Thread - #11/INFO]: <Edder_1> i forgot my stone pic in the chest[m
+
+[16:18:02] [Async Chat Thread - #12/INFO]: <Domino1234> did you get your iron armor[m
+
+[16:18:07] [Async Chat Thread - #12/INFO]: <Domino1234> and bow and sword[m
+
+[16:18:10] [Async Chat Thread - #12/INFO]: <Domino1234> alfred[m
+
+[16:18:22] [Async Chat Thread - #12/INFO]: <Domino1234> and all items in the chest[m
+
+[16:18:26] [Async Chat Thread - #12/INFO]: <Domino1234> ???[m
+
+[16:19:36] [Async Chat Thread - #13/INFO]: <Domino1234> ok[m
+
+[16:19:37] [Async Chat Thread - #13/INFO]: <Goof_Ball18> I am cooked[m
+
+[16:19:38] [Async Chat Thread - #13/INFO]: <Domino1234> 1[m
+
+[16:19:40] [Async Chat Thread - #13/INFO]: <Domino1234> 2[m
+
+[16:19:42] [Async Chat Thread - #13/INFO]: <Domino1234> 3[m
+
+[16:20:15] [Async Chat Thread - #13/INFO]: <Goof_Ball18> gg[m
+
+[16:20:18] [Async Chat Thread - #13/INFO]: <Domino1234> aother round?[m
+
+[16:20:21] [Server thread/INFO]: Domino1234 issued server command: /back
+[16:20:23] [Async Chat Thread - #13/INFO]: <Goof_Ball18> im alright[m
+
+[16:20:33] [Async Chat Thread - #13/INFO]: <Domino1234> so no?[m
+
+[16:20:41] [Async Chat Thread - #13/INFO]: <Goof_Ball18> yea[m
+
+[16:20:50] [Async Chat Thread - #13/INFO]: <Domino1234> ok[m
+
+[16:21:27] [Server thread/INFO]: Given [Anvil] * 1 to Domino1234
+[16:21:35] [Server thread/INFO]: Given [Diamond] * 5 to Domino1234
+[16:21:44] [Server thread/INFO]: Given 100000 experience to Domino1234
+[16:21:51] [Server thread/INFO]: Goof_Ball18 issued server command: /home 5
+[16:23:19] [Async Chat Thread - #14/INFO]: <Domino1234> YO EDDIE[m
+
+[16:23:23] [Async Chat Thread - #14/INFO]: <Edder_1> yuh[m
+
+[16:23:28] [Async Chat Thread - #14/INFO]: <Domino1234> did ya take my diamond pic[m
+
+[16:23:35] [Async Chat Thread - #14/INFO]: <Domino1234> check the enchants[m
+
+[16:23:49] [Async Chat Thread - #14/INFO]: <Edder_1> i dont have non diamonds.[m
+
+[16:23:52] [Server thread/INFO]: Edder_1 lost connection: Disconnected
+[16:24:15] [Async Chat Thread - #14/INFO]: <Domino1234> well your stone pic is here[m
+
+[16:24:33] [Server thread/INFO]: [0;37;22mGoof_Ball18 is now AFK[m
+
+[16:24:43] [Server thread/INFO]: Domino1234 issued server command: /home 2
+[16:28:23] [Server thread/INFO]: [0;37;22mGoof_Ball18 is no longer AFK.[m
+
+[16:28:33] [Server thread/INFO]: [0;37;22mDomino1234 is now AFK[m
+
+[16:28:39] [Server thread/INFO]: Goof_Ball18 lost connection: Disconnected
+[16:29:47] [Server thread/INFO]: [0;37;22mDomino1234 is no longer AFK.[m
+
+[16:32:33] [Server thread/INFO]: [0;37;22mDomino1234 is now AFK[m
+
+[16:34:33] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating backups, the server may lag for a little while...[m
+
+[16:34:33] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup(s) and compressing...[m
+
+[16:34:34] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world"[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world" created[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_the_end"[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_the_end" created[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_nether"[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_nether" created[m
+
+[16:34:41] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "plugins"[m
+
+[16:34:46] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "plugins" created[m
+
+[16:34:46] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup(s) created and compressed[m
+
+[16:34:46] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading backup(s)...[m
+
+[16:34:46] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world/Backup-world-2024-10-17--16-34.zip"[m
+
+[16:34:46] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[16:34:53] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[16:34:54] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 7.89 seconds (9755.5KB/s)[m
+
+[16:34:54] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world-2024-10-17--16-34.zip" complete[m
+
+[16:34:54] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_the_end/Backup-world_the_end-2024-10-17--16-34.zip"[m
+
+[16:34:54] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[16:34:58] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[16:34:59] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.2 seconds (56.39KB/s)[m
+
+[16:34:59] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_the_end-2024-10-17--16-34.zip" complete[m
+
+[16:34:59] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_nether/Backup-world_nether-2024-10-17--16-34.zip"[m
+
+[16:34:59] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[16:35:03] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[16:35:04] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.01 seconds (613.69KB/s)[m
+
+[16:35:04] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_nether-2024-10-17--16-34.zip" complete[m
+
+[16:35:04] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/plugins/Backup-plugins-2024-10-17--16-34.zip"[m
+
+[16:35:04] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[16:35:09] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 7.16 seconds (5854.33KB/s)[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-plugins-2024-10-17--16-34.zip" complete[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup(s) uploaded[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mChecking for upload errors...[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup to [0;33;22mGoogle Drive[0;36;22m complete[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mNo upload errors found[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup complete[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThe next backup is in 59 minutes[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world"[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_the_end"[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "plugins"[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_nether"[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup pruning complete[m
+
+[16:35:11] [Craft Scheduler Thread - 31/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup took 37 seconds to compleate[m
+
+[16:39:27] [Server thread/INFO]: Domino1234 lost connection: Disconnected
+[17:34:33] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating backups, the server may lag for a little while...[m
+
+[17:34:33] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup(s) and compressing...[m
+
+[17:34:33] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world"[m
+
+[17:34:40] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world" created[m
+
+[17:34:40] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_the_end"[m
+
+[17:34:40] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_the_end" created[m
+
+[17:34:40] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_nether"[m
+
+[17:34:41] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_nether" created[m
+
+[17:34:41] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "plugins"[m
+
+[17:34:44] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "plugins" created[m
+
+[17:34:44] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup(s) created and compressed[m
+
+[17:34:44] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading backup(s)...[m
+
+[17:34:44] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world/Backup-world-2024-10-17--17-34.zip"[m
+
+[17:34:44] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[17:34:51] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[17:34:52] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 7.56 seconds (10182.28KB/s)[m
+
+[17:34:52] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world-2024-10-17--17-34.zip" complete[m
+
+[17:34:52] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_the_end/Backup-world_the_end-2024-10-17--17-34.zip"[m
+
+[17:34:52] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[17:34:56] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[17:34:57] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.05 seconds (58.03KB/s)[m
+
+[17:34:57] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_the_end-2024-10-17--17-34.zip" complete[m
+
+[17:34:57] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_nether/Backup-world_nether-2024-10-17--17-34.zip"[m
+
+[17:34:57] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[17:35:01] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[17:35:02] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.09 seconds (603.92KB/s)[m
+
+[17:35:02] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_nether-2024-10-17--17-34.zip" complete[m
+
+[17:35:02] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/plugins/Backup-plugins-2024-10-17--17-34.zip"[m
+
+[17:35:02] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[17:35:09] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 8.78 seconds (4777.53KB/s)[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-plugins-2024-10-17--17-34.zip" complete[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup(s) uploaded[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mChecking for upload errors...[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup to [0;33;22mGoogle Drive[0;36;22m complete[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mNo upload errors found[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup complete[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThe next backup is in 59 minutes[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mDisabling automatic backups due to inactivity[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world"[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_the_end"[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "plugins"[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_nether"[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup pruning complete[m
+
+[17:35:11] [Craft Scheduler Thread - 44/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup took 37 seconds to compleate[m
+
+[18:34:33] [Craft Scheduler Thread - 61/INFO]: [HideStream] Running updater ..
+[18:34:34] [Craft Scheduler Thread - 61/INFO]: [HideStream] ------------------------------------
+[18:34:34] [Craft Scheduler Thread - 61/INFO]: [HideStream] HideStream v3.10 is now available!
+[18:34:34] [Craft Scheduler Thread - 61/INFO]: [HideStream] Run '/hs update' to update now.
+[18:34:34] [Craft Scheduler Thread - 61/INFO]: [HideStream] ------------------------------------
+[19:57:58] [Thread-36/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[19:57:58] [Server thread/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mEnabling automatic backups[m
+
+[19:57:58] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:33466] logged in with entity id 12861 at ([world]-2372.6683865079044, 63.0, -109.30000001192093)
+[19:58:00] [Thread-37/INFO]: UUID of player MMMMMMMMMMMM is b9809a03-3483-36cb-b5d4-5f9d85e8dc42
+[19:58:00] [Server thread/INFO]: MMMMMMMMMMMM[/[0:0:0:0:0:0:0:1]:33474] logged in with entity id 12952 at ([world]-2326.4139815861445, 63.0, -140.2393287416436)
+[19:58:31] [Server thread/INFO]: MMMMMMMMMMMM lost connection: Login timed out!
+[19:58:31] [Server thread/WARN]: handleDisconnection() called twice
+[19:59:28] [Thread-38/INFO]: UUID of player MMMMMMMMMMMM is b9809a03-3483-36cb-b5d4-5f9d85e8dc42
+[19:59:28] [Server thread/INFO]: MMMMMMMMMMMM[/[0:0:0:0:0:0:0:1]:41048] logged in with entity id 13314 at ([world]-2326.4139815861445, 63.0, -140.2393287416436)
+[19:59:56] [Server thread/INFO]: MMMMMMMMMMMM lost connection: Disconnected
+[20:00:00] [Thread-39/INFO]: UUID of player MMMMMMMMMMMM is b9809a03-3483-36cb-b5d4-5f9d85e8dc42
+[20:00:00] [Server thread/INFO]: MMMMMMMMMMMM[/[0:0:0:0:0:0:0:1]:45528] logged in with entity id 13323 at ([world]-2326.4139815861445, 37.0, -140.2393287416436)
+[20:09:35] [Server thread/INFO]: Domino1234 has just earned the achievement [Beaconator]
+[20:11:24] [Server thread/INFO]: MMMMMMMMMMMM issued server command: /back
+[20:13:00] [Server thread/INFO]: Domino1234 lost connection: Disconnected
+[20:13:15] [Server thread/INFO]: MMMMMMMMMMMM lost connection: Disconnected
+[20:29:29] [Thread-41/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[20:29:29] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:45228] logged in with entity id 14806 at ([world]-2451.8993211302195, 63.0625, -38.055594282200566)
+[20:30:43] [Server thread/INFO]: Domino1234 issued server command: /home 2
+[20:34:33] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating backups, the server may lag for a little while...[m
+
+[20:34:33] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup(s) and compressing...[m
+
+[20:34:33] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world"[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world" created[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_the_end"[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_the_end" created[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "./world_nether"[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "./world_nether" created[m
+
+[20:34:41] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mCreating local backup for "plugins"[m
+
+[20:34:45] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup for "plugins" created[m
+
+[20:34:45] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup(s) created and compressed[m
+
+[20:34:45] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading backup(s)...[m
+
+[20:34:45] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world/Backup-world-2024-10-17--20-34.zip"[m
+
+[20:34:45] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[20:34:52] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[20:34:53] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 8.12 seconds (9480.46KB/s)[m
+
+[20:34:53] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world-2024-10-17--20-34.zip" complete[m
+
+[20:34:53] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_the_end/Backup-world_the_end-2024-10-17--20-34.zip"[m
+
+[20:34:53] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[20:34:57] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[20:34:58] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.22 seconds (56.12KB/s)[m
+
+[20:34:58] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_the_end-2024-10-17--20-34.zip" complete[m
+
+[20:34:58] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/world_nether/Backup-world_nether-2024-10-17--20-34.zip"[m
+
+[20:34:58] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[20:35:02] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[20:35:03] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 5.14 seconds (598.27KB/s)[m
+
+[20:35:03] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-world_nether-2024-10-17--20-34.zip" complete[m
+
+[20:35:03] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mStarting upload(s) for file "/workspaces/POOKIE/server/backups/plugins/Backup-plugins-2024-10-17--20-34.zip"[m
+
+[20:35:03] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUploading file to Google Drive[m
+
+[20:35:08] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThere are 21 file(s) for the current backup location in Google Drive which exceeds the limit of 20, deleting[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mFile uploaded in 7.49 seconds (5600.17KB/s)[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mUpload(s) for file "Backup-plugins-2024-10-17--20-34.zip" complete[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup(s) uploaded[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mChecking for upload errors...[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup to [0;33;22mGoogle Drive[0;36;22m complete[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mNo upload errors found[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup complete[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mThe next backup is in 59 minutes[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world"[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_the_end"[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "plugins"[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mPruning local backups for "./world_nether"[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup limit is set to 0, skipping pruning[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mLocal backup pruning complete[m
+
+[20:35:11] [Craft Scheduler Thread - 90/INFO]: [0;33;22m[[0;31;22mDriveBackupV2[0;33;22m] [0;36;22mBackup took 37 seconds to compleate[m
+
+[20:37:30] [Server thread/INFO]: Domino1234 lost connection: Timed out
+[20:42:58] [Thread-43/INFO]: UUID of player Edder_1 is 43a02876-64fe-3707-bc1a-429c44418197
+[20:42:58] [Server thread/INFO]: Edder_1[/[0:0:0:0:0:0:0:1]:37414] logged in with entity id 15577 at ([world]-2338.4905767092787, 15.0, -95.21581311265214)
+[20:47:52] [Thread-44/INFO]: UUID of player Domino1234 is 004273f8-cbed-348c-a835-8522ccd8733f
+[20:47:52] [Server thread/INFO]: Domino1234[/[0:0:0:0:0:0:0:1]:41520] logged in with entity id 16356 at ([world]-2375.3582222455143, 63.0, -119.71209584625679)
+[20:51:46] [Server thread/INFO]: Given [Cobblestone Monster Egg] * 1 to Domino1234
+[20:52:02] [Server thread/INFO]: Given [Stone Monster Egg] * 7 to Domino1234
+[20:52:23] [Server thread/INFO]: Given [Stone Monster Egg] * 17 to Domino1234
+[20:52:39] [Server thread/INFO]: There is no such item with name minecraft:1
+[20:52:50] [Server thread/INFO]: Given [Stone Monster Egg] * 1 to Domino1234
+[20:53:24] [Server thread/INFO]: There is no such item with name minecraft:mob_sp
+[20:53:31] [Server thread/INFO]: Opped Domino1234
+[20:53:54] [Server thread/INFO]: Domino1234 lost connection: Disconnected
+[20:54:22] [Thread-45/INFO]: UUID of player T_ony is 2f3fde68-f7c3-39fb-8078-0d1661c5910b
+[20:54:22] [Server thread/INFO]: T_ony[/[0:0:0:0:0:0:0:1]:51570] logged in with entity id 17116 at ([world]-2369.5347763162704, 59.0, -116.81543533701007)
+[20:54:33] [Server thread/INFO]: T_ony lost connection: Disconnected
+[20:54:33] [Server thread/INFO]: [0;37;22mEdder_1 is now AFK[m
+
+[20:55:05] [Thread-46/INFO]: UUID of player T_ony is 2f3fde68-f7c3-39fb-8078-0d1661c5910b
+[20:55:05] [Server thread/INFO]: T_ony[/[0:0:0:0:0:0:0:1]:43550] logged in with entity id 17231 at ([world]-2369.529893695479, 59.0, -116.79645324022596)
+[20:55:42] [Async Chat Thread - #15/INFO]: <T_ony> hawk tuah is anyone on[m
+
+[20:56:28] [Async Chat Thread - #15/INFO]: <T_ony> eddie you on?[m
+
+[20:57:25] [Server thread/INFO]: [0;37;22mEdder_1 is no longer AFK.[m
+
+[20:57:33] [Server thread/INFO]: T_ony issued server command: /afk
+[20:57:33] [Server thread/INFO]: [0;37;22mT_ony is now AFK[m
+
+[20:57:41] [Server thread/INFO]: [0;37;22mT_ony is no longer AFK.[m
+
+[20:57:47] [Server thread/INFO]: T_ony issued server command: /afk
+[20:57:47] [Server thread/INFO]: [0;37;22mT_ony is now AFK[m
+
+[20:58:08] [Server thread/INFO]: T_ony lost connection: Disconnected
+[21:00:33] [Server thread/INFO]: [0;37;22mEdder_1 is now AFK[m
+
+[21:11:42] [Server thread/INFO]: [0;37;22mEdder_1 is no longer AFK.[m
+
+[21:12:00] [Server thread/WARN]: Wrong location for EntityChicken['Chicken'/17855, l='world', x=-2416.05, y=26.76, z=-60.79] in world 'world'!
+[21:12:00] [Server thread/WARN]: Entity is at -2416.046990653367,-60.793139875401884 (chunk -152,-4) but was stored in chunk -151,-4
+[21:18:49] [Thread-48/INFO]: UUID of player T_ony is 2f3fde68-f7c3-39fb-8078-0d1661c5910b
+[21:18:49] [Server thread/INFO]: T_ony[/[0:0:0:0:0:0:0:1]:41420] logged in with entity id 18894 at ([world]-2367.300000011921, 15.0, -106.30000001192094)

@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "13c33049-008d-344a-b31a-b3a617b3ced9",
+    "name": "Domino1234_TEST",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "004273f8-cbed-348c-a835-8522ccd8733f",
+    "name": "Domino1234",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

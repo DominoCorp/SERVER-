@@ -1,0 +1,6 @@
+# change to false to stop auto-update-check
+auto-update-check: true
+cancelcolor: RED
+cancelbroadcast: true
+debug: false
+lang: en_US
